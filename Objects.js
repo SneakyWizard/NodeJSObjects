@@ -56,7 +56,7 @@ exports.Objects = class {
 			const file_loc = path + '/' + file;
 			const is_dir   = fs.lstatSync( file_loc ).isDirectory();
 		
-			if ( is_dir == true ) {
+			if ( is_dir === true ) {
 		
 				// Recursion.
 				this.objectize( file_loc, objects );
